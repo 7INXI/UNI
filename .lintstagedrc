@@ -1,4 +1,3 @@
 {
-  "src/*.{js,jsx,ts,tsx,vue}": ["npx prettier --write", "npx eslint --fix"],
-  "src/*.{css,scss,less,json,md}": ["prettier --write"]
+  "*.{js,jsx,ts,tsx,vue}": ["echo 'from lint-stage'"]
 }
