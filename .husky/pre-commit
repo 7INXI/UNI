@@ -3,4 +3,4 @@
 
 # lint-staged
 #npx lint-staged -q
-npx lint-staged -q
+npx lint-staged

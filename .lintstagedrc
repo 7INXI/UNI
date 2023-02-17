@@ -1,3 +1,3 @@
 {
-  "src/*": ["npx eslint", "npx prettier --write"]
+  "src/*.{vue,ts,js}": ["npx eslint", "npx prettier --write"]
 }
