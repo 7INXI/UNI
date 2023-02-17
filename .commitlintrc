@@ -1,8 +1,19 @@
 {
-  // "extends": [
-  //   "@commitlint/config-conventional"
-  // ],
   "rules": {
+    "type-enum": [
+      2,
+      "always",
+      [
+        "feat",
+        "update",
+        "fix",
+        "conf",
+        "optimize",
+        "factor",
+        "format",
+        "doc"
+      ]
+    ],
     "type-empty": [
       2,
       "never"
@@ -16,21 +27,6 @@
       2,
       "never",
       72
-    ],
-    "type-enum": [
-      2,
-      "always",
-      [
-        "ts",
-        "feat",
-        "update",
-        "fix",
-        "conf",
-        "optimize",
-        "factor",
-        "format",
-        "doc"
-      ]
     ]
   }
 }

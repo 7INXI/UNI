@@ -1,3 +1,4 @@
 {
-  "src/*.{vue,ts,js}": ["npx eslint", "npx prettier --write"]
+  "src/**/*.{js,ts,vue}": "npx --no-install eslint",
+  "src/**/*.{js,ts,md,html,css,scss,less}": "npx --no-install prettier --write"
 }

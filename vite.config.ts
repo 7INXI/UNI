@@ -1,16 +1,22 @@
 import { defineConfig } from "vite";
 import uni from "@dcloudio/vite-plugin-uni";
-const AutoImport = require("unplugin-auto-import/vite");
+import AutoImport from "unplugin-auto-import/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     uni(),
     AutoImport({
-      imports: ["vue", "vue-router"],
+      imports: [
+        // presets
+        "vue",
+        "vue-router",
+      ],
+      dts: "./auto-imports.d.ts",
       eslintrc: {
-        enabled: false,
-        globalsPropValue: true,
+        enabled: true, // Default `false`
+        filepath: "./.eslintrc-auto-import.json", // Default `./.eslintrc-auto-import.json`
+        globalsPropValue: true, // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
       },
     }),
   ],
