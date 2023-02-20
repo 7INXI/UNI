@@ -9,9 +9,10 @@ export default defineConfig({
     AutoImport({
       imports: [
         // presets
+        "uni-app",
         "vue",
-        "vue-router",
       ],
+      dirs: ["./hooks"],
       dts: "./auto-imports.d.ts",
       eslintrc: {
         enabled: true, // Default `false`
